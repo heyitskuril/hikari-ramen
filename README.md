@@ -1,47 +1,52 @@
-# Hikari Ramen House — Modern Web Experience
+# 🍜 Hikari Ramen House — Modern Web Experience
 
-[![Live Demo](https://shields.io)](https://hikari-ramen.vercel.app)
-[![Tech Stack](https://shields.io)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-1B1B1F?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-0F172A?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8)](https://tailwindcss.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://hikari-ramen.vercel.app)
 
-**Hikari Ramen House** adalah platform *landing page* premium yang dirancang khusus untuk industri F&B (Food & Beverage). Proyek ini menggabungkan estetika visual yang kuat dengan fungsionalitas konversi tinggi untuk menghadirkan pengalaman digital restoran Jepang yang otentik.
+---
+
+**Hikari Ramen House** is a premium landing page platform specifically designed for the F&B (Food & Beverage) industry. This project combines high-impact visual aesthetics with high-conversion functionality to deliver an authentic digital Japanese restaurant experience based in Sawangan, Depok.
 
 ---
 
 ## Tech Stack
 
-Membangun performa maksimal dengan teknologi modern:
+Built for maximum performance using modern technologies:
 
-- **Core:** React 19 & Vite (Fastest Development & Build Tool)
-- **Language:** TypeScript (Type Safety & Maintainability)
-- **Styling:** TailwindCSS 4 (Modern Utility-First CSS)
-- **Animation:** Framer Motion (Fluid & Natural Transitions)
-- **Icons:** Lucide Icons (Clean & Scalable Vectors)
+- **Core:** `React 19` & `Vite 6` (Fastest Development & Build Tool)
+- **Language:** `TypeScript` (Type Safety & Maintainability)
+- **Styling:** `TailwindCSS 4` (Modern Utility-First CSS)
+- **Animation:** `Framer Motion 12` (Fluid & Natural Transitions)
+- **Icons:** `Lucide Icons` (Clean & Scalable Vectors)
 
 ---
 
 ## Project Goals
 
-Proyek ini dikembangkan dengan tiga pilar utama:
-1. **Showcase Portfolio:** Demonstrasi keahlian pengembangan web di niche F&B.
-2. **UMKM Empowerment:** Studi kasus nyata dalam mendigitalisasi bisnis lokal agar tampil profesional.
-3. **Reusable Framework:** Arsitektur yang dapat digunakan kembali sebagai boilerplate klien restoran atau kafe.
+This project was developed based on three main pillars:
+1. **Portfolio Showcase:** Demonstrating web development expertise within the F&B niche.
+2. **SME Empowerment:** A real-world case study in digitalizing local businesses to look professional.
+3. **Reusable Framework:** A modular architecture that serves as a boilerplate for future restaurant or cafe clients.
 
 ---
 
-## Fitur Unggulan
+## Key Features
 
-- **Fast Loading:** Optimasi aset dan penggunaan Vite memastikan pemuatan instan.
-- **Mobile-First:** Dirancang secara presisi agar nyaman diakses melalui smartphone.
-- **Digital Menu:** Katalog visual berbasis kategori yang menggugah selera.
-- **WhatsApp Integration:** Jalur pemesanan langsung untuk meningkatkan konversi.
-- **Smooth Experience:** Animasi mikro yang memberikan kesan mewah pada setiap scroll.
-- **Modular Design:** Komponen yang independen dan mudah untuk dikembangkan.
+- ** Fast Loading:** Asset optimization and Vite integration ensure near-instant load times.
+- **Mobile-First:** Precisely engineered for a seamless experience on smartphones.
+- **Digital Menu:** A category-based visual catalog designed to drive appetite.
+- **WhatsApp Integration:** Direct ordering channels to maximize customer conversion.
+- **Smooth Experience:** Micro-animations providing a premium feel during every scroll.
+- **Modular Design:** Independent components that are easy to maintain and scale.
 
 ---
 
-## Arsitektur Proyek
+## Project Architecture
 
-Menerapkan **Feature-Based Architecture** untuk memastikan kode tetap bersih dan mudah dikelola seiring berkembangnya fitur:
+Utilizing a **Feature-Based Architecture** to ensure clean and manageable code:
 
 ```text
 src/features/
@@ -54,143 +59,50 @@ src/features/
 └── contact/        # Direct communication
 ```
 
-### Mengapa ini penting?
-*   **Scalability:** Memudahkan penambahan fitur baru tanpa merusak kode lama.
-*   **Separation of Concern:** Logika antar-section terisolasi dengan rapi.
-*   **Team Friendly:** Sangat mendukung kolaborasi tim atau manajemen agensi di masa depan.
-
----
-
-## Struktur Folder
-
-```text
-src/
-├── components/   # UI universal (Buttons, Cards, Modals)
-├── features/     # Modul per halaman/section
-├── constants/    # Data statis (Menu list, Branch info, Testimonials)
-├── hooks/        # Custom React hooks logic
-├── utils/        # Fungsi pembantu (Link WA builder, Formatters)
-├── types/        # Definisi interface TypeScript
-└── assets/       # Gambar, video, dan styling global
-```
-
----
-
-## Strategi Konversi (Sales-Driven)
-
-Website ini bukan sekadar pajangan, tapi dirancang sebagai mesin penjualan:
-- **Hero Hook:** Visual produk utama yang langsung disambung dengan tombol *Call to Action* (CTA).
-- **Social Proof:** Menampilkan testimoni nyata untuk membangun kepercayaan calon pembeli.
-- **Friction Reducer:** Section "How to Order" menjelaskan alur pemesanan agar pelanggan tidak bingung.
-- **Floating WA:** Akses instan untuk bertanya atau memesan yang selalu tersedia di pojok layar.
-
----
-
-## Kasus Penggunaan (UMKM)
-
-Template arsitektur ini sangat ideal diadaptasi untuk:
-*   Kedai Ramen & Sushi
-*   Coffee Shop & Bistro
-*   Street Food Brand
-*   Cloud Kitchen & Catering Service
-
 ---
 
 ## Scripts
 
-Gunakan perintah berikut untuk mengelola proyek:
+Use the following commands to manage the project:
 
 ```bash
-# Jalankan development server
+# Run development server
 npm run dev
 
-# Build untuk produksi
+# Build for production
 npm run build
 
-# Preview hasil build secara lokal
+# Preview production build locally
 npm run preview
-
-# Cek kesalahan tipe data (TypeScript)
-npm run lint
 ```
 
 ---
 
 ## SEO & Digital Presence
 
-Dilengkapi dengan dasar SEO yang solid:
-- **Meta Description & Keywords:** Optimasi mesin pencari.
-- **Open Graph:** Tampilan rapi saat link dibagikan di media sosial.
-- **Mobile Responsive:** Google memprioritaskan situs yang ramah perangkat seluler.
-- **Performance Focused:** Skor performa tinggi untuk pengalaman pengguna yang baik.
+Equipped with a solid SEO foundation:
+- **Local SEO:** Schema.org Restaurant markup optimized for the Sawangan, Depok area.
+- **Open Graph:** Rich image previews (og-image) for WhatsApp and Instagram sharing.
+- **Performance:** High Lighthouse scores for an optimal User Experience.
 
 ---
 
-## Penulis
+## Author
 
-**Kuril — Web Developer**
-*Spesialis membantu UMKM & Bisnis Lokal Go Digital.*
+**Kuril Web Developer**  
+*Empowering SMEs & Local Businesses to Go Digital.*
 
-- **WhatsApp:** [0898-5175-971](https://wa.me)
+- **WhatsApp:** [+62 898-5175-971](https://wa.me)
 - **Instagram:** [@heyitskuril](https://instagram.com)
 - **Portfolio:** [kuril.dev](https://kuril.dev)
 
 ---
 
-## Catatan
-*Proyek ini adalah **concept project** untuk keperluan demo portofolio dan bukan merupakan website resmi dari brand tertentu.*
+## Note
+*This is a **concept project** created for portfolio purposes and is not an official website for any specific commercial brand.*
 
 ---
 
-## Dukungan
-Jika proyek ini membantu atau menginspirasi Anda, jangan ragu untuk memberikan **Star** pada repo ini! ⭐
-
-
-
-hikari-ramen/
-├── public/
-│   └── favicon.ico
-├── src/
-│   ├── assets/
-│   ├── components/
-│   │   ├── layout/
-│   │   │   ├── Navbar.tsx
-│   │   │   └── Footer.tsx
-│   │   └── ui/
-│   │       ├── FloatingWhatsApp.tsx
-│   │       └── FloatingDevBadge.tsx
-│   ├── features/
-│   │   ├── hero/
-│   │   │   └── HeroSection.tsx
-│   │   ├── about/
-│   │   │   └── AboutSection.tsx
-│   │   ├── menu/
-│   │   │   ├── MenuSection.tsx
-│   │   │   └── ProductCard.tsx
-│   │   ├── testimonials/
-│   │   │   └── TestimonialsSection.tsx
-│   │   ├── how-to-order/
-│   │   │   └── HowToOrderSection.tsx
-│   │   ├── gallery/
-│   │   │   └── GallerySection.tsx
-│   │   └── contact/
-│   │       └── ContactSection.tsx
-│   ├── constants/
-│   │   ├── business.ts
-│   │   ├── navigation.ts
-│   │   ├── products.ts
-│   │   ├── testimonials.ts
-│   │   └── steps.ts
-│   ├── hooks/
-│   │   └── useScrollDetection.ts
-│   ├── types/
-│   │   └── index.ts
-│   ├── utils/
-│   │   └── whatsapp.ts
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── index.css
-├── index.html
-├── package.json
-├── tsconfig.json
-└── vite.config.ts
+<div align="center">
+  If this project helps or inspires you, feel free to give it a <b>Star</b> ⭐
+</div>
