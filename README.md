@@ -1,4 +1,4 @@
-# 🍜 Hikari Ramen House — Modern Web Experience
+# Hikari Ramen House — Modern Web Experience
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
@@ -8,66 +8,107 @@
 
 ---
 
-**Hikari Ramen House** is a premium landing page platform specifically designed for the F&B (Food & Beverage) industry. This project combines high-impact visual aesthetics with high-conversion functionality to deliver an authentic digital Japanese restaurant experience based in Sawangan, Depok.
+**Hikari Ramen House** is a premium landing page built for the F&B (Food & Beverage) industry. This project combines high-impact visual aesthetics with conversion-focused functionality to deliver an authentic digital Japanese restaurant experience, representing a real local business in Sawangan, Depok.
+
+Live URL: [hikari-ramen.vercel.app](https://hikari-ramen.vercel.app)
 
 ---
 
 ## Tech Stack
 
-Built for maximum performance using modern technologies:
-
-- **Core:** `React 19` & `Vite 6` (Fastest Development & Build Tool)
-- **Language:** `TypeScript` (Type Safety & Maintainability)
-- **Styling:** `TailwindCSS 4` (Modern Utility-First CSS)
-- **Animation:** `Framer Motion 12` (Fluid & Natural Transitions)
-- **Icons:** `Lucide Icons` (Clean & Scalable Vectors)
+| Layer | Technology | Version |
+|---|---|---|
+| Framework | React | 19 |
+| Build Tool | Vite | 6 |
+| Language | TypeScript | 5.8 |
+| Styling | Tailwind CSS | 4 |
+| Animation | Motion (Framer Motion) | 12 |
+| Icons | Lucide React | latest |
 
 ---
 
 ## Project Goals
 
-This project was developed based on three main pillars:
-1. **Portfolio Showcase:** Demonstrating web development expertise within the F&B niche.
-2. **SME Empowerment:** A real-world case study in digitalizing local businesses to look professional.
-3. **Reusable Framework:** A modular architecture that serves as a boilerplate for future restaurant or cafe clients.
+This project was developed around three main pillars:
+
+1. **Portfolio Showcase** : Demonstrating full-cycle web development expertise within the F&B niche, from architecture to deployment.
+2. **SME Digitalization** : A real-world case study in giving local Indonesian businesses a professional digital presence and a digital asset they own (website + domain).
+3. **Reusable Boilerplate** : A modular, feature-based architecture designed to be adapted quickly for future restaurant, cafe, or MSME clients.
 
 ---
 
 ## Key Features
 
-- ** Fast Loading:** Asset optimization and Vite integration ensure near-instant load times.
-- **Mobile-First:** Precisely engineered for a seamless experience on smartphones.
-- **Digital Menu:** A category-based visual catalog designed to drive appetite.
-- **WhatsApp Integration:** Direct ordering channels to maximize customer conversion.
-- **Smooth Experience:** Micro-animations providing a premium feel during every scroll.
-- **Modular Design:** Independent components that are easy to maintain and scale.
+- **Performance-First** : Lazy-loaded images, passive scroll listeners, and Vite's optimized build pipeline for near-instant load times.
+- **Mobile-First** : Fully responsive layout engineered for seamless experience across all screen sizes.
+- **Digital Menu Catalog** : Category-based visual menu with direct WhatsApp ordering per item.
+- **WhatsApp Integration** : Pre-filled message links on every call-to-action to minimize friction and maximize conversion.
+- **Motion Design** : Scroll-aware animations and hover micro-interactions using the Motion library for a premium feel.
+- **SEO Foundation** : Semantic HTML, meta description, Open Graph tags, and local keywords baked into `index.html`.
+- **Feature-Based Architecture** : Clean separation of concerns; each feature is independently maintainable and scalable.
 
 ---
 
 ## Project Architecture
 
-Utilizing a **Feature-Based Architecture** to ensure clean and manageable code:
-
 ```text
-src/features/
-├── hero/           # First impression & branding
-├── about/          # Brand story & values
-├── menu/           # Dynamic menu catalog
-├── testimonials/   # Social proof & trust builder
-├── how-to-order/   # User journey guide
-├── gallery/        # Visual ambiance
-└── contact/        # Direct communication
+hikari-ramen/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Navbar.tsx
+│   │   │   └── Footer.tsx
+│   │   └── ui/
+│   │       ├── FloatingWhatsApp.tsx
+│   │       ├── FloatingDevBadge.tsx
+│   │       └── WhatsAppIcon.tsx
+│   ├── features/
+│   │   ├── hero/               # First impression & branding
+│   │   ├── about/              # Brand story & values
+│   │   ├── menu/               # Dynamic menu catalog & product cards
+│   │   ├── testimonials/       # Social proof & trust builder
+│   │   ├── how-to-order/       # Customer journey guide
+│   │   ├── gallery/            # Visual ambiance showcase
+│   │   └── contact/            # Location map & direct communication
+│   ├── constants/
+│   │   ├── business.ts         # Single source of truth for business data
+│   │   ├── navigation.ts
+│   │   ├── products.ts
+│   │   ├── testimonials.ts
+│   │   └── steps.tsx
+│   ├── hooks/
+│   │   └── useScrollDetection.ts
+│   ├── types/
+│   │   └── index.ts
+│   ├── utils/
+│   │   └── whatsapp.ts         # WhatsApp link builder utilities
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── index.html
+├── vite.config.ts
+└── tsconfig.json
 ```
 
 ---
 
-## Scripts
-
-Use the following commands to manage the project:
+## Getting Started
 
 ```bash
+# Clone the repository
+git clone https://github.com/heyitskuril/hikari-ramen.git
+cd hikari-ramen
+
+# Install dependencies
+npm install
+
 # Run development server
 npm run dev
+
+# Type check
+npm run lint
 
 # Build for production
 npm run build
@@ -78,31 +119,49 @@ npm run preview
 
 ---
 
-## SEO & Digital Presence
+## Customization
 
-Equipped with a solid SEO foundation:
-- **Local SEO:** Schema.org Restaurant markup optimized for the Sawangan, Depok area.
-- **Open Graph:** Rich image previews (og-image) for WhatsApp and Instagram sharing.
-- **Performance:** High Lighthouse scores for an optimal User Experience.
+All business information is centralized in `src/constants/business.ts`. To adapt this project for a different client, update that file along with the data in `src/constants/products.ts` and `src/constants/testimonials.ts`. No hunting through component files required.
+
+```typescript
+// src/constants/business.ts
+export const BUSINESS_INFO = {
+  name: 'Hikari Ramen House',
+  phone: '08985175971',
+  wa: '628985175971',
+  address: 'Jl. Raya Sawangan, Depok, Jawa Barat',
+  hours: '14:00 – 23:00 (Senin Tutup)',
+  // ...
+} as const;
+```
+
+---
+
+## Deployment
+
+This project is deployed on Vercel with zero configuration. Push to `main` triggers an automatic production deployment.
+
+```bash
+# Install Vercel CLI (optional, for manual deploys)
+npm i -g vercel
+
+# Deploy
+vercel --prod
+```
 
 ---
 
 ## Author
 
-**Kuril Web Developer**  
-*Empowering SMEs & Local Businesses to Go Digital.*
+**Kuril Web Developer**
+<br/>
+Empowering Indonesian MSMEs and local brands to go digital.
 
-- **WhatsApp:** [+62 898-5175-971](https://wa.me)
-- **Instagram:** [@heyitskuril](https://instagram.com)
-- **Portfolio:** [kuril.dev](https://kuril.dev)
-
+- WhatsApp: [+62 898-5175-971](https://wa.me/628985175971)
+- Instagram: [@heyitskuril](https://instagram.com/heyitskuril)
+- Portfolio: [Kuril.dev](https://kuril.dev)
 ---
 
 ## Note
-*This is a **concept project** created for portfolio purposes and is not an official website for any specific commercial brand.*
 
----
-
-<div align="center">
-  If this project helps or inspires you, feel free to give it a <b>Star</b> ⭐
-</div>
+This is a concept project created for portfolio purposes and is not an official website for a registered commercial brand. The business data used is fictional and for demonstration only.
