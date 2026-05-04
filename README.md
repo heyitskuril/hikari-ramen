@@ -10,7 +10,7 @@
 
 **Hikari Ramen House** is a premium landing page built for the F&B (Food & Beverage) industry. This project combines high-impact visual aesthetics with conversion-focused functionality to deliver an authentic digital Japanese restaurant experience, representing a real local business in Sawangan, Depok.
 
-Live URL: [hikari-ramen.vercel.app](https://hikari-ramen.vercel.app)
+Live URL: [Hikari Ramen](https://hikari-ramen.vercel.app)
 
 ---
 
